@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import '../styles/search.css';
+import React, { useState } from "react";
+import "../styles/search.css";
 
 const Search = () => {
   return (
     <>
-      <input className='search' type='text' />
-      <button type='submit'>Search</button>
+      <input className="search-input" type="text" />
+      {/* <button className="search-button" type="submit">Search</button> */}
     </>
   );
 }

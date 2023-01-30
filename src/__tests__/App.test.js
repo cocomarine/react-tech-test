@@ -1,5 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import React from "react";
+import renderer from "react-test-renderer";
 import App from '../components/App';
 
-test('renders learn react link', () => {
+describe("App", () => {
+  it("renders App correctly", () => {
+    const rendered = renderer.create(<App />);
+    expect(rendered).toMatchSnapshot();
+  });
 });
