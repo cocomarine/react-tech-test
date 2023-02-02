@@ -4,8 +4,8 @@ import SearchResults from "./SearchResults";
 import "../styles/app.css";
 
 const App = () => {
-  const [ searchResults, setSearchResults ] = useState();
-
+  const [ searchResults, setSearchResults ] = useState([]);
+  searchResults.map((e) => console.log(e));
   return (
     <div className="app">
       <img 
@@ -14,7 +14,7 @@ const App = () => {
         alt="Nasa logo in red"
       />
       <Search setSearchResults={setSearchResults} />
-      <SearchResults />
+      <SearchResults results={searchResults} />
     </div>
   );
 }
