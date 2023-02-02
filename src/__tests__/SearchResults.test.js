@@ -4,22 +4,30 @@ import renderer from "react-test-renderer";
 import SearchResults from "../components/SearchResults";
 
 describe("SearchResults", () => {
-  const validProp = [
+  let mockResults = [
       "https://testimage1",
       "https://testimage2",
       "https://testimage3",
   ];
 
   it("renders SearchResults correctly", () => {
-    const rendered = renderer.create(<SearchResults results={validProp}/>);
+    const rendered = renderer.create(<SearchResults results={mockResults}/>);
     expect(rendered).toMatchSnapshot();
   });
 
   it("renders correct number of results", () => {
-    render(<SearchResults results={validProp} />);
+    render(<SearchResults results={mockResults} />);
 
     expect(screen.getByAltText("https://testimage1")).toBeInTheDocument();
     expect(screen.getByAltText("https://testimage2")).toBeInTheDocument();
     expect(screen.getByAltText("https://testimage3")).toBeInTheDocument();
   });
+
+  it("shows 'No results' message when the results is empty", () => {
+    mockResults = [];
+
+    render(<SearchResults results={mockResults} />);
+
+    expect(screen.getByText("No results")).toBeInTheDocument();
+  })
 });
