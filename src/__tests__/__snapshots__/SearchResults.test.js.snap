@@ -1,14 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchResults renders SearchResults correctly 1`] = `
-Array [
-  <p>
-    Search Results
-  </p>,
+<div
+  className="search-results"
+>
   <img
-    alt="space"
+    alt="https://testimage1"
     className="card-image"
-    src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-  />,
-]
+    src="https://testimage1"
+  />
+  <img
+    alt="https://testimage2"
+    className="card-image"
+    src="https://testimage2"
+  />
+  <img
+    alt="https://testimage3"
+    className="card-image"
+    src="https://testimage3"
+  />
+</div>
 `;

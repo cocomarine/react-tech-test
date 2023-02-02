@@ -5,7 +5,7 @@ import "../styles/app.css";
 
 const App = () => {
   const [ searchResults, setSearchResults ] = useState([]);
-  searchResults.map((e) => console.log(e));
+
   return (
     <div className="app">
       <img 
