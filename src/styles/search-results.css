@@ -1,0 +1,4 @@
+.card-image {
+  display: flex;
+  justify-content: space-evenly;
+}
