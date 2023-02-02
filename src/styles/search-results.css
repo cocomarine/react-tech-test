@@ -1,4 +1,13 @@
-.card-image {
+.search-results {
+  margin: 80px 0px 0px 80px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row; 
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card-image {
+  width: 15%;
+  height: 15%;
+  border-radius: 5px;
 }
