@@ -18,7 +18,7 @@ This is a search engine built using React as a practice for a technical test wit
 - Relevant API endpoint: `GET​​ ​​https://images-api.nasa.gov/search ​Params: ​​q`
 
 The app was created by bootstratpping with create-react-app and tested using Jest and React Testing Library. The pictures below show how the resulting app looks like on computer and mobile screens.  
-<img src="images/search_results_computer_screenshot.png" width="400" height="225" alt="Computer screenshots of app" title="App on computer screen"/>
+<img src="images/search_results_computer_screenshot.png" width="430" height="240" alt="Computer screenshots of app" title="App on computer screen"/>
 <img src="images/search_results_mobile_screenshot.png" width="150" height="240" alt="Mobile screenshot of app" title="App on mobile screen" />
 
 ## Concepts covered
