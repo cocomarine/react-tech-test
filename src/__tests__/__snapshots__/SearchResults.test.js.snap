@@ -6,17 +6,17 @@ exports[`SearchResults renders SearchResults correctly 1`] = `
 >
   <img
     alt="https://testimage1"
-    className="card-image"
+    className="search-results__image"
     src="https://testimage1"
   />
   <img
     alt="https://testimage2"
-    className="card-image"
+    className="search-results__image"
     src="https://testimage2"
   />
   <img
     alt="https://testimage3"
-    className="card-image"
+    className="search-results__image"
     src="https://testimage3"
   />
 </div>

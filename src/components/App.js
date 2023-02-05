@@ -5,6 +5,7 @@ import "../styles/app.css";
 
 const App = () => {
   const [ searchResults, setSearchResults ] = useState([]);
+  const [ isLoading, setIsLoading ] = useState(true);
 
   return (
     <div className="app">
@@ -13,8 +14,14 @@ const App = () => {
         src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg" 
         alt="Nasa logo in red"
       />
-      <Search setSearchResults={setSearchResults} />
-      <SearchResults results={searchResults} />
+      <Search 
+        setSearchResults={setSearchResults} 
+        setIsLoading={setIsLoading} 
+      />
+      <SearchResults 
+        results={searchResults} 
+        isLoading={isLoading}
+      />
     </div>
   );
 }

@@ -29,8 +29,11 @@ exports[`App renders App correctly 1`] = `
       </button>
     </form>
   </div>
-  <p>
-    No results
-  </p>
+  <h2>
+    Please enter search terms
+  </h2>
+  <div
+    className="search-results"
+  />
 </div>
 `;

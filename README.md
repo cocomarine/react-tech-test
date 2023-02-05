@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# 🪐 NASA Image Search Engine App 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based search engine that returns images using a NASA API endpoint.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Concepts covered](#concepts-covered)
+- [Setup & getting started](#setup-&-getting-started)
+- [Using the app](#using-the-app)
+- [Author](#author)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is a search engine built using React as a practice for a technical test with the following requirements:
+- A Search page which allows users to search for images by keyword
+- Images must be returned upon a successful search
+- Relevant API endpoint: `GET​​ ​​https://images-api.nasa.gov/search ​Params: ​​q`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app was created by bootstratpping with create-react-app and tested using Jest and React Testing Library. The pictures below show how the resulting app looks like on computer and mobile screens.  
+<img src="images/search_results_computer_screenshot.png" width="400" height="225" alt="Computer screenshots of app" title="App on computer screen"/>
+<img src="images/search_results_mobile_screenshot.png" width="150" height="240" alt="Mobile screenshot of app" title="App on mobile screen" />
 
-### `npm test`
+## Concepts covered
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React, a JavaScript library, to build user interfaces (UI) and web applications
+- Incorporating HTML in React using JSX (JavaScript XML)
+- React state, props and hooks to create, pass and manage/configure data
+- React Testing Library (RTL) to test UI 
+- Event handling
+- Making a HTTP request to an API using axios package in JavaScript and processing the response
 
-### `npm run build`
+## Setup & getting started
+- Create a fork of this repo and clone the fork. 
+- Change directory into the cloned folder and install project dependencies. This app requires React, Axios and dev dependencies RTL.
+- To test the app, run `npm test`.
+- To start the app, run `npm start`. This starts the app at http://localhost:3000. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Using the app
+Start by typing the search term in the search box and press 'Go!' button. If the search doesn't find anything, 'No matching images. Try again.' message appears. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Future work
+If I have more time, I would like to improve on the general appearance of the app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+------------------
 
-### `npm run eject`
+## Author
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👤 **HJ Kang** 
+- GitHub [@cocomarine](https://github.com/cocomarine) 
+- LinkedIn [@hj-kang07](https://www.linkedin.com/in/hj-kang07/) 
