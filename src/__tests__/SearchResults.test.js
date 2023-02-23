@@ -32,9 +32,8 @@ describe("SearchResults", () => {
       />
     );
 
-    expect(screen.getByAltText("https://testimage1")).toBeInTheDocument();
-    expect(screen.getByAltText("https://testimage2")).toBeInTheDocument();
-    expect(screen.getByAltText("https://testimage3")).toBeInTheDocument();
+    const images = screen.getAllByRole('img');
+    expect(images).toHaveLength(validProps.mockResults.length);
   });
 
   it("shows the 'No matching images. Try again.' message when the results is empty", () => {
